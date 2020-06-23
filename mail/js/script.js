@@ -5,9 +5,11 @@
 var btn = document.getElementById('btn');
 
 var mailList = ["esempio@email.it", "ciao@email.it", "prova@gmail.com"];
-var successo = false;
+
 
 btn.addEventListener("click", function() {
+
+    var successo = false;
 
     var email = document.getElementById('email').value;
 
@@ -19,7 +21,6 @@ btn.addEventListener("click", function() {
 
     if (successo) {
         alert("Acceso riuscito!");
-        successo = false;
     } else {
         alert("Indirizzo email non valido!");
     }
